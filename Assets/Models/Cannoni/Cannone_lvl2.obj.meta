@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 3cafac9c27ddefc4bb16dd2747835c3c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cannone_difese_lvl2_Base
+    100002: Cannone_difese_lvl2_Canna_Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    100004: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    100006: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo
+    100008: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_01
+    100010: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_02
+    100012: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_03
+    100014: Cannone_difese_lvl2_Corpo
+    100016: Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Perno
+    100018: Cannone_difese_lvl2_Cristallo_Base_01
+    100020: Cannone_difese_lvl2_Cristallo_Base_02
+    100022: Cannone_difese_lvl2_Cristallo_Base_03
+    100024: Cannone_difese_lvl2_Cristallo_Base_04
+    100026: Cannone_difese_lvl2_Ingranaggio_01
+    100028: Cannone_difese_lvl2_Ingranaggio_02
+    100030: //RootNode
+    400000: Cannone_difese_lvl2_Base
+    400002: Cannone_difese_lvl2_Canna_Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    400004: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    400006: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo
+    400008: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_01
+    400010: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_02
+    400012: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_03
+    400014: Cannone_difese_lvl2_Corpo
+    400016: Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Perno
+    400018: Cannone_difese_lvl2_Cristallo_Base_01
+    400020: Cannone_difese_lvl2_Cristallo_Base_02
+    400022: Cannone_difese_lvl2_Cristallo_Base_03
+    400024: Cannone_difese_lvl2_Cristallo_Base_04
+    400026: Cannone_difese_lvl2_Ingranaggio_01
+    400028: Cannone_difese_lvl2_Ingranaggio_02
+    400030: //RootNode
+    2100000: Cannone_difese_lvl2_BaseMat
+    2100002: Cannone_difese_lvl2_Canna_Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_CorpoMat
+    2100004: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_CorpoMat
+    2100006: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_CristalloMat
+    2100008: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_01Mat
+    2100010: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_02Mat
+    2100012: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_03Mat
+    2100014: Cannone_difese_lvl2_CorpoMat
+    2100016: Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_PernoMat
+    2100018: Cannone_difese_lvl2_Cristallo_Base_01Mat
+    2100020: Cannone_difese_lvl2_Cristallo_Base_02Mat
+    2100022: Cannone_difese_lvl2_Cristallo_Base_03Mat
+    2100024: Cannone_difese_lvl2_Cristallo_Base_04Mat
+    2100026: Cannone_difese_lvl2_Ingranaggio_01Mat
+    2100028: Cannone_difese_lvl2_Ingranaggio_02Mat
+    2300000: Cannone_difese_lvl2_Base
+    2300002: Cannone_difese_lvl2_Canna_Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    2300004: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    2300006: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo
+    2300008: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_01
+    2300010: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_02
+    2300012: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_03
+    2300014: Cannone_difese_lvl2_Corpo
+    2300016: Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Perno
+    2300018: Cannone_difese_lvl2_Cristallo_Base_01
+    2300020: Cannone_difese_lvl2_Cristallo_Base_02
+    2300022: Cannone_difese_lvl2_Cristallo_Base_03
+    2300024: Cannone_difese_lvl2_Cristallo_Base_04
+    2300026: Cannone_difese_lvl2_Ingranaggio_01
+    2300028: Cannone_difese_lvl2_Ingranaggio_02
+    3300000: Cannone_difese_lvl2_Base
+    3300002: Cannone_difese_lvl2_Canna_Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    3300004: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    3300006: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo
+    3300008: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_01
+    3300010: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_02
+    3300012: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_03
+    3300014: Cannone_difese_lvl2_Corpo
+    3300016: Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Perno
+    3300018: Cannone_difese_lvl2_Cristallo_Base_01
+    3300020: Cannone_difese_lvl2_Cristallo_Base_02
+    3300022: Cannone_difese_lvl2_Cristallo_Base_03
+    3300024: Cannone_difese_lvl2_Cristallo_Base_04
+    3300026: Cannone_difese_lvl2_Ingranaggio_01
+    3300028: Cannone_difese_lvl2_Ingranaggio_02
+    4300000: Cannone_difese_lvl2_Base
+    4300002: Cannone_difese_lvl2_Canna_Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    4300004: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo
+    4300006: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo
+    4300008: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_01
+    4300010: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_02
+    4300012: Cannone_difese_lvl2_Cannone_corpo_Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Cristallo_testa_03
+    4300014: Cannone_difese_lvl2_Corpo
+    4300016: Cannone_difese_lvl2_Corpo_Cannone_difese_lvl2_Perno
+    4300018: Cannone_difese_lvl2_Cristallo_Base_01
+    4300020: Cannone_difese_lvl2_Cristallo_Base_02
+    4300022: Cannone_difese_lvl2_Cristallo_Base_03
+    4300024: Cannone_difese_lvl2_Cristallo_Base_04
+    4300026: Cannone_difese_lvl2_Ingranaggio_01
+    4300028: Cannone_difese_lvl2_Ingranaggio_02
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
