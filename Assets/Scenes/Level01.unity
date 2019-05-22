@@ -940,28 +940,38 @@ MonoBehaviour:
   game_Man: {fileID: 0}
   waves:
   - waveSprawls:
-    - enemy: {fileID: 8355946930087574390, guid: 91e10e1e9e8cf7047be1f74fc91ac7c3,
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
         type: 3}
       count: 1
       rate: 2
       spawnPoint: {fileID: 1120017837}
-    - enemy: {fileID: 8355946930087574390, guid: 91e10e1e9e8cf7047be1f74fc91ac7c3,
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
         type: 3}
       count: 2
       rate: 2
       spawnPoint: {fileID: 1314224041}
   - waveSprawls:
-    - enemy: {fileID: 8355946930087574390, guid: 91e10e1e9e8cf7047be1f74fc91ac7c3,
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
         type: 3}
-      count: 2
+      count: 6
+      rate: 2
+      spawnPoint: {fileID: 1120017837}
+    - enemy: {fileID: 355485628798764180, guid: 51a8a93c5cc45d14d8e307c4b27bb477,
+        type: 3}
+      count: 4
       rate: 2
       spawnPoint: {fileID: 1120017837}
   - waveSprawls:
-    - enemy: {fileID: 8355946930087574390, guid: 91e10e1e9e8cf7047be1f74fc91ac7c3,
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
         type: 3}
-      count: 2
+      count: 12
       rate: 2
-      spawnPoint: {fileID: 800792769}
+      spawnPoint: {fileID: 1120017837}
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
+        type: 3}
+      count: 5
+      rate: 2
+      spawnPoint: {fileID: 1314224041}
   - waveSprawls:
     - enemy: {fileID: 904550591524261566, guid: 34bb51e073e24e549b736656b8e7ada6,
         type: 3}
