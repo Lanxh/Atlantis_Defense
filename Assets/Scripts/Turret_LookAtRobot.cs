@@ -96,7 +96,16 @@ public class Turret_LookAtRobot : MonoBehaviour
             
             //NOTA:questo non sarà necessario una volta personalizzati i proiettili
             bullet.SetDamage(turretStats.damage);   //setta il danno del proiettile a quello di chi lo spara
+        }
 
+        //Come sopra, ma per il proiettile esplosivo
+        Bullet_Explosive_Behaviour bexpl = bulletGO.GetComponent<Bullet_Explosive_Behaviour>();
+
+        if (bexpl != null)         //Se nell'oggetto c'è lo script che abbiamo chiesto (Bullet_Behaviour)
+        {
+            bexpl.Seek(_target);   //Chiama il comando Seek al suo interno, consegnandogli il transform del bersaglio
+
+            bexpl.SetDamage(turretStats.damage);   //setta il danno del proiettile a quello di chi lo spara
         }
     }
 

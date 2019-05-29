@@ -30,6 +30,7 @@ public class Enemy_Behaviour : MonoBehaviour
     public NavMeshAgent _navMeshAgent;                  //dichiara la navMesh dell'Enemy
     public GameObject _target;                          //dichiara l'oggetto che fungerà da destinazione
     public string _targetName= "Base_Prova";            //dichiara il nome dell'oggetto che fungerà da destinazione (il nome della base nell'Inspector)
+    private Enemy_Animation _animScript;                //script dell'animazione
 
     private Vector3 _targetForFlyers;                   //serve per trovare il punto verso cui si muovono i nemici volanti (che è più in alto)
     private int _flyersHeight = 55;                    //dichiara l'altezza su cui stanno tutti i nemici volanti
@@ -50,6 +51,7 @@ public class Enemy_Behaviour : MonoBehaviour
     void Start()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();//la navMesh dell'Enemy è quella contenuta in QUESTO(this) Gameobject
+        _animScript = GetComponent<Enemy_Animation>();//lo script di animazione contenuto in questo gameobject
 
         //trovare la direzione
         _target = GameObject.Find(_targetName); //trova il target in base al nome che gli hai dato nell'Inspector
@@ -65,7 +67,7 @@ public class Enemy_Behaviour : MonoBehaviour
 
         if (_myTypeOfRobot == TypeOfRobot.Flyer)        //se è un nemico volante...
         {
-            Debug.Log("Vola!");
+            //Debug.Log("Vola!");
             _navMeshAgent.enabled = false;
             transform.position= new Vector3(transform.position.x, _flyersHeight, transform.position.z);
             _targetForFlyers = new Vector3(_destination.position.x, _flyersHeight, _destination.position.z);
@@ -140,7 +142,13 @@ public class Enemy_Behaviour : MonoBehaviour
     {
         if (_myTypeOfRobot == TypeOfRobot.Flyer)        //se è un nemico volante...
         {
+            if (_animScript.IsInAtkAnim() == true)
+            {
+                _animScript.AttackAnimation(false); //imposta l'animazione di attacco su "idle"
+            }
             transform.position = Vector3.MoveTowards(transform.position, _targetForFlyers, _enemySpeed/50);
+            transform.LookAt(_targetForFlyers,Vector3.up);
+            //Debug.Log("FSwarm");
         }
     }
 
@@ -158,20 +166,26 @@ public class Enemy_Behaviour : MonoBehaviour
             direzione frontale (trasform.forward) e andare verso il target (targetDir)*/
             Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
 
-            //shooting
-            if (fireCountdown <= 0f)                //se il timer scende a 0...
-            {
-                Shoot();                            //...attiva il comando "Spara"...
-                fireCountdown = 1f / enemyStats.fireRate; //... e resetta il timer
-            }
+            ////shooting
+            //if (fireCountdown <= 0f)                //se il timer scende a 0...
+            //{
+            //    Shoot();                            //...attiva il comando "Spara"...
+            //    fireCountdown = 1f / enemyStats.fireRate; //... e resetta il timer
+            //}
 
-            fireCountdown -= Time.deltaTime;        //il timer cala con il tempo
+            //fireCountdown -= Time.deltaTime;        //il timer cala con il tempo
 
 
             transform.rotation = Quaternion.LookRotation(newDir);   //ruota di uno step nella direzione della torre
             if (_myTypeOfRobot != TypeOfRobot.Flyer)                //se non è un nemico volante...
             {
                 _navMeshAgent.speed = 0; // ferma il nemico
+            }
+
+            //animazione
+            if (_animScript.IsInAtkAnim() == false)
+            {
+                _animScript.AttackAnimation(true); //imposta l'animazione di attacco su "attacco"
             }
         }
         else                            //Se invece non trova più il target(torretta distrutta)
@@ -192,7 +206,7 @@ public class Enemy_Behaviour : MonoBehaviour
         }
     }
 
-    void Shoot()                                //comando che instanzia il proiettile
+    public void Shoot()                                //comando che instanzia il proiettile
     {
         //istanzia un proiettile(bulletPrefab), alla posizione del punto che abbiamo scelto nell'inspector(firePoint.position), 
         //e alla stessa rotazione di quel punto (firePoint.rotation)

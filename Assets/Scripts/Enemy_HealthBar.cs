@@ -5,6 +5,8 @@ using UnityEngine.UI;// per far funzionare la UI (la healthBar appunto)
 
 public class Enemy_HealthBar : MonoBehaviour
 {
+    private Enemy_Animation _animScript;                //script dell'animazione
+
     private float startHealth = 100f;   //dichiara la variabile per la vita totale del nemico
     public float health = 100f;         //dichiara la variabile per la vita attuale del nemico
     private int prize = 1;              //dichiara la variabile per la taglia in denarao del nemico
@@ -20,6 +22,8 @@ public class Enemy_HealthBar : MonoBehaviour
 
     void Start()
     {
+        _animScript= GetComponent<Enemy_Animation>();//lo script di animazione contenuto in questo gameobject
+
         Wave_Spawner.enemiesAlive++;    //aumenta di uno (++ significa "aggiungi un +1") il contatore di nemici che sta nello script Wave_Spawner
 
         mainCamera = Camera.main;       //trova la camera principale (che è anche l'unica)
@@ -60,28 +64,39 @@ public class Enemy_HealthBar : MonoBehaviour
         }
     }
 
-    void Die()                      //comando di morte (chiamato su TakeDamage() )
+    private void Die()                      //comando di morte (chiamato su TakeDamage() )
     {
         Wave_Spawner.enemiesAlive--;//Sottrai di uno (-- significa "sottrai di uno") il contatore di nemici che sta nello script Wave_Spawner 
 
+        CapsuleCollider CapCollider = GetComponent<CapsuleCollider>();      //prende il capsule collider dell'oggetto
+        CapCollider.enabled = false;                            //disabilita il collider
+
         //Debug.Log(Wave_Spawner.enemiesAlive + " Nemici vivi"); //stampa i nemici vivi (per debug)
 
-        /*DA AGGIUNGERE QUI:
-        1)Animazione di morte
-        */
+
+        //Animazione di morte
+        _animScript.DeathAnimation();
+        
         GameObject.Find("GameManager").GetComponent<GoldManager>().ChangeMoney(prize);//trova il GameManager,prendi il component GoldManager e chiama il comando per cambiare i soldi(ChangeMoney)
         Destroy(bar);               //distruggi la barra
-        Destroy(gameObject);        //distruggi questo gameobject
+        //la distruzione dell'oggetto avviene alla fine dell'animazione
     }
 
     private void Update()
     {
         //WorldToScreenPoint trasforma un punto nel mondo in un punto sullo schermo (quindi perfetto per un canvas)
-        bar.transform.position = mainCamera.WorldToScreenPoint(transform.position+new Vector3(0,3f,0));
+        if (bar != null)
+        {
+            bar.transform.position = mainCamera.WorldToScreenPoint(transform.position+new Vector3(0,3f,0));
+        }
         
     }
 
-
+    public void DestroyObject()
+    {
+        Debug.Log("oggetto distrutto");
+        Destroy(gameObject);        //distruggi questo gameobject
+    }
 
 
 

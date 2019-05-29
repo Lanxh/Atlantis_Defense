@@ -187,5 +187,5 @@ public class Tower_Choice : MonoBehaviour
         GameObject.Find("GameManager").GetComponent<GoldManager>().ChangeMoney(+price);//aggiungi i soldi alla cassa del giocatore
         
     }
-}
+ }
 

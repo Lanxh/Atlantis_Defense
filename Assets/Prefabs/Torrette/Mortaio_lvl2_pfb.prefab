@@ -983,7 +983,7 @@ MonoBehaviour:
   turretStats:
     fireRate: 0.5
     damage: 65
-    bulletPrefab: {fileID: 550760514440463059, guid: 45ffb68fd5739744cb991912f7c9797e,
+    bulletPrefab: {fileID: 550760514440463059, guid: dd9d2c5c08e63254dbaf3839a9ad2f65,
       type: 3}
     startingHealth: 100
     priceToBuy: 60
