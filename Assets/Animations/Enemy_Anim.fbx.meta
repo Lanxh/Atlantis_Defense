@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9fe597c5bedae4f4e926e056844b0fd2
+guid: 8974f6b5c3e994e4bbfda2fd0fc402b9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -12,35 +12,45 @@ ModelImporter:
     100012: Bone.001
     100014: Bone.002
     100016: Bone.002_end
-    100018: Bone.003
-    100020: Bone.004
-    100022: Bone.010
-    100024: Bone.011
-    100026: Bone.011_end
-    100028: //RootNode
-    100030: foot.l
-    100032: foot.l_end
-    100034: foot.r.001
-    100036: foot.r.001_end
-    100038: hand.l
-    100040: hand.r.001
-    100042: leg.l
-    100044: leg.r.001
-    100046: leg2.l
-    100048: leg2.r.001
-    100050: pSphere1
-    100052: toe.l
-    100054: toe.l_end
-    100056: toe.r.001
-    100058: toe.r.001_end
-    100060: toe2.l
-    100062: toe2.l_end
-    100064: toe2.r.001
-    100066: toe2.r.001_end
-    100068: toe3.l
-    100070: toe3.l_end
-    100072: toe3.r.001
-    100074: toe3.r.001_end
+    100018: Bone.002_end_end
+    100020: Bone.003
+    100022: Bone.004
+    100024: Bone.010
+    100026: Bone.011
+    100028: Bone.011_end
+    100030: Bone.011_end_end
+    100032: //RootNode
+    100034: foot.l
+    100036: foot.l_end
+    100038: foot.l_end_end
+    100040: foot.r.001
+    100042: foot.r.001_end
+    100044: foot.r.001_end_end
+    100046: hand.l
+    100048: hand.r.001
+    100050: leg.l
+    100052: leg.r.001
+    100054: leg2.l
+    100056: leg2.r.001
+    100058: pSphere1
+    100060: toe.l
+    100062: toe.l_end
+    100064: toe.l_end_end
+    100066: toe.r.001
+    100068: toe.r.001_end
+    100070: toe.r.001_end_end
+    100072: toe2.l
+    100074: toe2.l_end
+    100076: toe2.l_end_end
+    100078: toe2.r.001
+    100080: toe2.r.001_end
+    100082: toe2.r.001_end_end
+    100084: toe3.l
+    100086: toe3.l_end
+    100088: toe3.l_end_end
+    100090: toe3.r.001
+    100092: toe3.r.001_end
+    100094: toe3.r.001_end_end
     400000: arm.l
     400002: arm.r.001
     400004: arm2.l
@@ -50,40 +60,52 @@ ModelImporter:
     400012: Bone.001
     400014: Bone.002
     400016: Bone.002_end
-    400018: Bone.003
-    400020: Bone.004
-    400022: Bone.010
-    400024: Bone.011
-    400026: Bone.011_end
-    400028: //RootNode
-    400030: foot.l
-    400032: foot.l_end
-    400034: foot.r.001
-    400036: foot.r.001_end
-    400038: hand.l
-    400040: hand.r.001
-    400042: leg.l
-    400044: leg.r.001
-    400046: leg2.l
-    400048: leg2.r.001
-    400050: pSphere1
-    400052: toe.l
-    400054: toe.l_end
-    400056: toe.r.001
-    400058: toe.r.001_end
-    400060: toe2.l
-    400062: toe2.l_end
-    400064: toe2.r.001
-    400066: toe2.r.001_end
-    400068: toe3.l
-    400070: toe3.l_end
-    400072: toe3.r.001
-    400074: toe3.r.001_end
+    400018: Bone.002_end_end
+    400020: Bone.003
+    400022: Bone.004
+    400024: Bone.010
+    400026: Bone.011
+    400028: Bone.011_end
+    400030: Bone.011_end_end
+    400032: //RootNode
+    400034: foot.l
+    400036: foot.l_end
+    400038: foot.l_end_end
+    400040: foot.r.001
+    400042: foot.r.001_end
+    400044: foot.r.001_end_end
+    400046: hand.l
+    400048: hand.r.001
+    400050: leg.l
+    400052: leg.r.001
+    400054: leg2.l
+    400056: leg2.r.001
+    400058: pSphere1
+    400060: toe.l
+    400062: toe.l_end
+    400064: toe.l_end_end
+    400066: toe.r.001
+    400068: toe.r.001_end
+    400070: toe.r.001_end_end
+    400072: toe2.l
+    400074: toe2.l_end
+    400076: toe2.l_end_end
+    400078: toe2.r.001
+    400080: toe2.r.001_end
+    400082: toe2.r.001_end_end
+    400084: toe3.l
+    400086: toe3.l_end
+    400088: toe3.l_end_end
+    400090: toe3.r.001
+    400092: toe3.r.001_end
+    400094: toe3.r.001_end_end
     2100000: No Name
     4300000: pSphere1
+    7400000: Armature|Attack
+    7400002: Armature|Death
+    7400004: Armature|Walk
     9500000: //RootNode
     13700000: pSphere1
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -136,7 +158,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
