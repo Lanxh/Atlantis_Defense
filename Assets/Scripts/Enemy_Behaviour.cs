@@ -33,7 +33,7 @@ public class Enemy_Behaviour : MonoBehaviour
     private Enemy_Animation _animScript;                //script dell'animazione
 
     private Vector3 _targetForFlyers;                   //serve per trovare il punto verso cui si muovono i nemici volanti (che è più in alto)
-    private int _flyersHeight = 55;                    //dichiara l'altezza su cui stanno tutti i nemici volanti
+    private int _flyersHeight = 45;                    //dichiara l'altezza su cui stanno tutti i nemici volanti
 
     public float _rotationSpeed = 1f;                   //velocità con cui si gira verso la torre
     public float _enemySpeed = 15f;                     //velocità di movimento

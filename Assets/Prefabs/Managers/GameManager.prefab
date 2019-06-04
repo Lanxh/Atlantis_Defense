@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4032563099744187510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4032563099744187504}
+  - component: {fileID: 4032563099744187511}
+  - component: {fileID: 4032563099744187505}
+  - component: {fileID: 4032563099744187506}
+  - component: {fileID: 4032563099744187507}
+  - component: {fileID: 4032563099744187468}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GM
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4032563099744187504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032563099744187510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 260.3562, y: 43, z: 209.43323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4032563099744187511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032563099744187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1ac0df605abb54b9a87c7409de21de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel_Build: {fileID: 0}
+  Panel_Upgrade: {fileID: 0}
+--- !u!114 &4032563099744187505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032563099744187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e2e5a6cad46544cb9e7bf89babfa85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wave_Spawner: {fileID: 0}
+  baseBehaviour: {fileID: 0}
+--- !u!114 &4032563099744187506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032563099744187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241335255792634bb240b4319be14b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Build_Panel: {fileID: 0}
+  Upgrade_Panel: {fileID: 0}
+  Rebuild_Panel: {fileID: 0}
+  Povero_Panel: {fileID: 0}
+  rovine: {fileID: 5980648665523771971, guid: 925bed62103d400418f5382a9f70c3e3, type: 3}
+  Torri:
+  - {fileID: 1787045314752118132, guid: ad211ed1c5a55644f83622b5947ad6d6, type: 3}
+  - {fileID: 8268931889547995642, guid: bb6018ef6d31db64184c1cb9d71e5ce1, type: 3}
+  - {fileID: 5982136634424232852, guid: 90f26b3cf83f4c84892522c87dd01e22, type: 3}
+  repairScript: {fileID: 4032563099744187468}
+  DivisionePrezzo: 2
+--- !u!114 &4032563099744187507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032563099744187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82056b714ff1e94ea7bca567573ce4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 400
+--- !u!114 &4032563099744187468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032563099744187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09454d7fe8f4ba4f94aede56d03a1be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Povero_Panel: {fileID: 0}
+  TorriInScena: []
+  totRiparazioni: 0
+  torrettaSelezionata: {fileID: 0}

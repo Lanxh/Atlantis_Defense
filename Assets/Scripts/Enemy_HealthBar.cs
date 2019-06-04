@@ -45,11 +45,8 @@ public class Enemy_HealthBar : MonoBehaviour
 
         health = startHealth;       //per far in modo che anche cambiando il valore della vita, la barra mostri la percentuale di vita correttamente
 
-
-        Debug.Log($"fill amount:{bar.fillAmount}, {barFilled.fillAmount}");
         bar.fillAmount = 0f;                //nasconde la barra finchè non prende danni
         barFilled.fillAmount = 0f;          //nasconde la barra finchè non prende danni
-        Debug.Log($"fill amount:{bar.fillAmount}, {barFilled.fillAmount}");
 
     }
 

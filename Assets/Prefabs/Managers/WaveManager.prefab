@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7526851331458829201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7526851331458829207}
+  - component: {fileID: 7526851331458829206}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7526851331458829207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526851331458829201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 105.03, y: 40.43, z: 360.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7526851331458829206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526851331458829201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12567ce4abc9864680572612ea037aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actual_Wave: -1
+  total_Wave: 10
+  updated_Wave: 0
+  Next_Wave_Button_GM: {fileID: 0}
+  button_next: {fileID: 0}
+  text_counter: {fileID: 0}
+  game_Man: {fileID: 0}
+  waves:
+  - waveSprawls:
+    - enemy: {fileID: 42407499, guid: 7d98d6ff3fc26954792c95b32de7dfc7, type: 3}
+      count: 1
+      rate: 2
+      spawnPoint: {fileID: 0}
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
+        type: 3}
+      count: 2
+      rate: 2
+      spawnPoint: {fileID: 0}
+  - waveSprawls:
+    - enemy: {fileID: 42407499, guid: 7c01b4b73c8931442bc381490eef6199, type: 3}
+      count: 6
+      rate: 2
+      spawnPoint: {fileID: 0}
+    - enemy: {fileID: 42407499, guid: 7c01b4b73c8931442bc381490eef6199, type: 3}
+      count: 4
+      rate: 2
+      spawnPoint: {fileID: 0}
+  - waveSprawls:
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
+        type: 3}
+      count: 12
+      rate: 2
+      spawnPoint: {fileID: 0}
+    - enemy: {fileID: 904550591524261566, guid: bc4ee2c0e790d804ba528695f4656430,
+        type: 3}
+      count: 5
+      rate: 2
+      spawnPoint: {fileID: 0}
+  - waveSprawls:
+    - enemy: {fileID: 904550591524261566, guid: 34bb51e073e24e549b736656b8e7ada6,
+        type: 3}
+      count: 2
+      rate: 2
+      spawnPoint: {fileID: 0}

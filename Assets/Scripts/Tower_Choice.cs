@@ -20,8 +20,11 @@ public class Tower_Choice : MonoBehaviour
 
     public void TowerSpawn (GameObject Target)
     {
+        Debug.Log("TowerSpawn Chiamato");
         if (Target.tag == "TowerPos")
         {
+            Debug.Log("Trovata tag towerPos");
+
             TempTarget = Target;
             pStatus = Target.GetComponent<Platform_Status>();
             SpawnPoint =Target.transform.Find("SpawnPoint");   //trova il transform del figlio della piattaforma, purchè sia chiamato "SpawnPoint"
