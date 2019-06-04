@@ -76,7 +76,7 @@ public class Enemy_Behaviour : MonoBehaviour
 
         if (_myTypeOfRobot != TypeOfRobot.Flyer)        //se non è un nemico volante...
         {
-            Debug.Log("Non è volante");
+            //Debug.Log("Non è volante");
 
             if (_navMeshAgent == null)              //controlla se ha un navMeshAgent e se non trova niente...
             {
@@ -199,7 +199,7 @@ public class Enemy_Behaviour : MonoBehaviour
     {
         if (_destination != null)
         {
-            Debug.Log("destinazione settata");
+            //Debug.Log("destinazione settata");
             Vector3 targetVector = _destination.transform.position; //estrae una coordinata dal transform di _destination (da definire nell'inspector)
             _navMeshAgent.SetDestination(targetVector);             //setta la destinazione dell'IA su quella coordinata
             _navMeshAgent.speed = enemyStats.speed;         //imposta la velocità del robot a quella definita nell' inspector

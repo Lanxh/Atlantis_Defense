@@ -30,14 +30,14 @@ public class FindDieScript : MonoBehaviour
         animscript.DestroyObject();
     }
 
-    public void StartFalling()
+    public void StartFalling()  //solo per i nemici volanti
     {
         //Debug.Log("StartFalling chiamato");
 
         falling = true;
     }
 
-    public void TriggerShot()
+    public void TriggerShot()   //quando sparare
     {
         //Debug.Log("triggerShot chiamato");
 

@@ -168,7 +168,7 @@ MonoBehaviour:
     speed: 12
     reward: 15
     fireRate: 1
-    bulletPrefab: {fileID: 550760514440463059, guid: 45ffb68fd5739744cb991912f7c9797e,
+    bulletPrefab: {fileID: 2252040182065241645, guid: 65fd83ba7d97b5545a9711d1ca214ce3,
       type: 3}
     firePoint: {fileID: 6218294675677727980}
   _destination: {fileID: 0}
@@ -195,6 +195,8 @@ MonoBehaviour:
   health: 100
   barPrefab: {fileID: 9171719417281661191, guid: 03f683027c731144d8e15474e6b5594c,
     type: 3}
+  bar: {fileID: 0}
+  barFilled: {fileID: 0}
 --- !u!114 &2182476202288495554
 MonoBehaviour:
   m_ObjectHideFlags: 0

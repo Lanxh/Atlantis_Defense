@@ -13,8 +13,8 @@ public class Enemy_HealthBar : MonoBehaviour
 
     //single Canvas Healthbar
     public GameObject barPrefab;    //dichiara il prefab da usare per la barra della vita (da definire nell'inspector)
-    protected Image bar;            //dichiara l'immagine da usare per la barra della vita (protected così non appare nell'inspector)
-    protected Image barFilled;      //dichiara l'immagine da usare per il riempimento della barra della vita
+    public Image bar;            //dichiara l'immagine da usare per la barra della vita (protected così non appare nell'inspector)
+    public Image barFilled;      //dichiara l'immagine da usare per il riempimento della barra della vita
     private Camera mainCamera;      //dichiara la camera di riferimento (quella principale)
 
 
@@ -44,9 +44,13 @@ public class Enemy_HealthBar : MonoBehaviour
         barFilled = new List<Image>(bar.GetComponentsInChildren<Image>()).Find(img => img != bar);
 
         health = startHealth;       //per far in modo che anche cambiando il valore della vita, la barra mostri la percentuale di vita correttamente
-        
+
+
+        Debug.Log($"fill amount:{bar.fillAmount}, {barFilled.fillAmount}");
         bar.fillAmount = 0f;                //nasconde la barra finchè non prende danni
         barFilled.fillAmount = 0f;          //nasconde la barra finchè non prende danni
+        Debug.Log($"fill amount:{bar.fillAmount}, {barFilled.fillAmount}");
+
     }
 
     public void TakeDamage(int damage)  //questo comando deve essere chiamato dichiarando sempre anche un valore int (utile perchè puoi chiamarlo da altri script, in questo caso è chiamato dal proiettile che tocca il bersaglio)
@@ -88,8 +92,9 @@ public class Enemy_HealthBar : MonoBehaviour
         if (bar != null)
         {
             bar.transform.position = mainCamera.WorldToScreenPoint(transform.position+new Vector3(0,3f,0));
+            //Debug.Log($"fill amount:{bar.fillAmount}, {barFilled.fillAmount}");
         }
-        
+
     }
 
     public void DestroyObject()
